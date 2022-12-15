@@ -12,7 +12,11 @@
   height: 100vh;
 }
 
+
+
 .landing-page h2 {
+  white-space: nowrap;
+  
   position: absolute;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 40px;
@@ -24,6 +28,7 @@
 }
 
 .landing-page h3 {
+  white-space: nowrap;
   position: absolute;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
@@ -60,7 +65,11 @@
 }
 
 .logo-name {
-  color: #D66939;
+  white-space: nowrap;
+  color: white;
+  position: relative;
+  margin-left: 30px;
+  top: -19px;
 }
 
 /* Desktop main menu */
@@ -69,21 +78,24 @@
   margin-left: 70%;
 }
 
-.desktop-main-menu ul {
-  display: flex;
-}
 
-.desktop-main-menu ul li {
+.desktop-main-menu ul { 
+  display: inline-flexbox;
   position: relative;
   margin-right: 20px;
+  top: -20px;
   text-transform: uppercase;
+  color: white;
+}
+
+.desktop-main-menu h10 {
   color: #D66939;
 }
 
 /* Hamburger menu */
  
 .hamburger {
-  position: fixed;
+  position: absolute;
   top: 40px;
   right: 20px;
   cursor: pointer;
@@ -91,6 +103,9 @@
   height: 20px;
   background: none;
   border: none;
+  top: -0.1px;
+  margin-top: 21px;
+  
 
 }
 
@@ -118,6 +133,7 @@
 /* Overlay */
 
 .overlay {
+  white-space: nowrap;
   position:absolute;
   top: 0;
   bottom: 0;
@@ -148,7 +164,7 @@
   transform: translateX(5px);
   width: 150px;
   height: 2px;
-  margin-top: 200px;
+  margin-top:300px;
   transform: rotate(90deg);
 }
 
@@ -157,7 +173,7 @@
   height: 2px;
   width: 150px;
   transform: rotate(90deg);
-  margin-top: 700px;
+  margin-top: 680px;
   
 }
  /* Social media icons */
